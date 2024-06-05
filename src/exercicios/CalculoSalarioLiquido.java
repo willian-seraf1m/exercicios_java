@@ -7,10 +7,7 @@ public class CalculoSalarioLiquido {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		
-		float salarioBruto;
-		float adicionalNoturno;
-		float horasExtras;
-		float descontos;
+		float salarioBruto, adicionalNoturno, horasExtras, descontos;
 		
 		System.out.println("Digite seu Salário: ");
 		salarioBruto = leia.nextFloat();
@@ -23,6 +20,7 @@ public class CalculoSalarioLiquido {
 		
 		System.out.println("Digite os descontos: ");
 		descontos = leia.nextFloat();
+		leia.close();
 		
 		float salarioLiquido = (salarioBruto + adicionalNoturno + (horasExtras*5) - descontos);
 		

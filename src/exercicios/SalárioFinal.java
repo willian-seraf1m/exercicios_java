@@ -15,6 +15,7 @@ public class SalárioFinal {
 		
 		System.out.println("Digite o valor do abono:");
 		abono = leia.nextFloat();
+		leia.close();
 		
 		float novoSalario = salario + abono;
 		

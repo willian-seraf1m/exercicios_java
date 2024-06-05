@@ -23,6 +23,7 @@ public class DiferencaDoProduto {
 			
 			System.out.println("Digite n4:");
 			n4 = leia.nextFloat();
+			leia.close();
 			
 			float calculoDaDiferenca = (n1*n2) - (n3*n4);
 			System.out.printf("A diferença é %.1f", calculoDaDiferenca);
