@@ -8,7 +8,8 @@ public class ArrayEx01 {
 		Scanner scanner = new Scanner(System.in);
 		
 		int[] numbers = {2, 5, 1, 3, 4, 9, 7, 8, 10, 6};
-		int numberSearch;		
+		int numberSearch;
+		boolean foiEncontrado = false;
 		
 		System.out.println("Digite o número que você deseja encontrar: ");
 		numberSearch = scanner.nextInt();
@@ -17,11 +18,14 @@ public class ArrayEx01 {
 		for(int i = 0; i < numbers.length; i++) {
 			if(numbers[i] == numberSearch) {
 				System.out.printf("O número %d está localizado na posição: %d \n", numberSearch, i);
-				return;
+				foiEncontrado = !foiEncontrado;
+				break;
 			}
 		}
 		
-		System.out.printf("O numero %d não foi encontrado!", numberSearch);
-	
+		if(!foiEncontrado) {
+			System.out.printf("O numero %d não foi encontrado!", numberSearch);
+		}
+
 	}
 }
