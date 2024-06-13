@@ -11,8 +11,10 @@ import java.util.Scanner;
 */
 
 public class CollectionListEx01 {
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		
 		ArrayList<String> colorsList = new ArrayList<String>();
 		
 		for(int i=1; i<=5; i++) {
